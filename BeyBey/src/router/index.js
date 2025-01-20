@@ -14,7 +14,7 @@ const routes = [
     {
         path: '/login',
         name: 'login',
-        component:() => import('../views/login.vue')
+        component:() => import('../Auth/login.vue')
 
     },
     {
@@ -63,19 +63,19 @@ const routes = [
 
         path: '/RequestPassword',
         name: 'RequestPassword',
-        component: () => import('../views/RequestPassword.vue')
+        component: () => import('../Auth/RequestPassword.vue')
     },
     {
 
         path: '/ResetPassword',
         name: 'ResetPassword',
-        component: () => import('../views/ResetPassword.vue')
+        component: () => import('../Auth/ResetPassword.vue')
     },
     {
 
         path: '/Register',
         name: 'Register',
-        component: () => import('../views/Register.vue')
+        component: () => import('../Auth/Register.vue')
     }
     ,
     {

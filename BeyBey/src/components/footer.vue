@@ -1,6 +1,10 @@
 <template>
     <footer class="bg-gray-100 shadow-md  py-10 sm:px-10 px-6 font-[sans-serif] tracking-wide">
         <div class="max-w-screen-xl mx-auto">
+            <!-- Logo Section -->
+            <div class="flex items-center justify-center h-full" >
+                <img :src="logoPath" alt="Logo" class="h-14" />
+            </div>
             <hr class="my-12" />
             <!-- Links Section -->
             <div class="grid max-sm:grid-cols-1 max-lg:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -27,6 +31,7 @@
 
 <script setup>
 import { ref } from "vue";
+const logoPath = new URL("../assets/image/logo.png", import.meta.url).href;
 
 const email = ref("");
 

@@ -9,7 +9,7 @@
                 <img src="../assets/image/logo.png" alt="logo" class="w-36"/>
             </a>
             <a href="/" class="hidden max-sm:block">
-                <img src="../assets/image/logo.png" alt="logo" class="w-[100px]"/>
+                <img src="../assets/image/logo.png" alt="logo" class="w-[120px]"/>
             </a>
 
             <!-- Navigation Icons -->

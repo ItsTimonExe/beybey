@@ -261,11 +261,10 @@ function addToCart() {
                     <p v-if="selectedSize" class="mt-4 text-gray-800">Taille sélectionnée : {{ selectedSize }}</p>
                 </div>
 
-                <!-- Ajouter au panier -->
-                <div class="mt-6">
+                <!-- Add to Cart Button -->
+                <div class="p-4">
                     <button
-                        class="w-full px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white rounded-lg text-lg"
-                        @click="addToCart"
+                        class="w-full px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition duration-300 text-sm font-medium shadow-sm"
                     >
                         Ajouter au panier
                     </button>

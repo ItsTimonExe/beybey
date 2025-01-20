@@ -35,43 +35,36 @@
             <h2 class="text-3xl font-bold text-center mb-10">
                 Art & Comfort every day
             </h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
 
+            <!-- Products Grid -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <!-- Product Card -->
                 <div
                     v-for="product in products"
                     :key="product.id"
-                    class="bg-white shadow-md rounded-lg overflow-hidden group transform transition duration-300 hover:scale-105"
+                    class="bg-white shadow rounded overflow-hidden group cursor-pointer"
                 >
-                    <!-- Image Section -->
                     <div class="relative" @click="goToProduct(product.id)">
                         <img
                             :src="product.image"
                             :alt="product.name"
-                            class="w-full h-49 object-cover transition-opacity duration-300 group-hover:opacity-0"
+                            class="w-full h-70 object-cover transition-opacity duration-300 group-hover:opacity-0"
                         />
                         <img
                             :src="product.hoverImage"
                             :alt="product.name"
-                            class="absolute top-0 left-0 w-full h-49 object-cover transition-opacity duration-300 opacity-0 group-hover:opacity-100"
+                            class="absolute inset-0 w-full h-70 object-cover transition-opacity duration-300 opacity-0 group-hover:opacity-100"
                         />
                     </div>
-
-                    <!-- Product Info -->
                     <div class="p-4" @click="goToProduct(product.id)">
-                        <h3 class="text-lg font-semibold text-gray-800 truncate">
+                        <h3 class="text-lg font-semibold text-gray-800">
                             {{ product.name }}
                         </h3>
                         <div class="flex items-center justify-between mt-2">
-                            <p class="text-primary text-xl font-bold">{{ product.price }} DT</p>
-                            <p
-                                v-if="product.oldPrice"
-                                class="text-gray-500 line-through text-sm"
-                            >
-                                {{ product.oldPrice }} DT
-                            </p>
+                            <p class="text-primary text-xl font-bold">{{ product.price }}DT</p>
+                            <p class="text-gray-400 line-through">{{ product.oldPrice }}DT</p>
                         </div>
                     </div>
-
                     <!-- Add to Cart Button -->
                     <div class="p-4">
                         <button
@@ -82,6 +75,7 @@
                     </div>
                 </div>
             </div>
+            <!-- ./Product Card -->
         </section>
 
         <div class="relative w-full overflow-hidden bg-gray-900 text-white py-2">
@@ -92,7 +86,7 @@
             </div>
         </div>
         <!-- Swiper Section: Special Offers -->
-        <section class="py-16 bg-gray-100">
+        <section class="py-10 bg-gray-100">
             <div class="container mx-auto px-4">
                 <h2 class="text-3xl font-bold text-center mb-10">
                     Special Offers
@@ -106,12 +100,12 @@
                     :autoplay="{ delay: 3000 }"
                     :space-between="16"
                     :breakpoints="{ 640: { slidesPerView: 1 }, 768: { slidesPerView: 2 }, 1024: { slidesPerView: 3 } }"
-                    class="h-96"
+                    class="h-97"
                 >
                     <swiper-slide
                         v-for="offer in specialOffers"
                         :key="offer.id"
-                        class="rounded-lg shadow-lg overflow-hidden"
+                        class="rounded-lg  overflow-hidden"
                     >
                         <img
                             :src="offer.image"

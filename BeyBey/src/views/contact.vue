@@ -35,13 +35,13 @@ import Navbar from "../components/navBar.vue";
                             <!-- Phone -->
                             <li>
                                 <span class="block font-bold">Phone:</span>
-                                <span>+33 6 12 34 56 78</span>
+                                <span>+216 29 123 123</span>
                             </li>
 
                             <!-- Address -->
                             <li>
                                 <span class="block font-bold">Address:</span>
-                                <span>123 Example Street, Paris, France</span>
+                                <span>Tunise,Djerba 4135</span>
                             </li>
                         </ul>
                     </div>
@@ -59,7 +59,7 @@ import Navbar from "../components/navBar.vue";
                             <input
                                 id="name"
                                 type="text"
-                                placeholder="John Doe"
+                                placeholder="Name"
                                 class="block w-full mt-2 rounded-lg border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500"
                             />
                         </div>

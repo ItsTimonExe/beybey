@@ -221,7 +221,7 @@ const toggleSidebar = () => {
             </aside>
 
             <!-- Products -->
-            <main class="col-span-1 md:col-span-3">
+            <main class="col-span-1 md:col-span-3 min-h-screen py-10 px-4 md:px-10">
                 <!-- Sorting Options -->
                 <div class="mb-4">
                     <select
@@ -263,9 +263,10 @@ const toggleSidebar = () => {
                                 <p class="text-gray-400 line-through">{{ product.oldPrice }}DT</p>
                             </div>
                         </div>
-                        <div class="mt-6">
+                        <!-- Add to Cart Button -->
+                        <div class="p-4">
                             <button
-                                class="w-full px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white text-lg"
+                                class="w-full px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition duration-300 text-sm font-medium shadow-sm"
                             >
                                 Ajouter au panier
                             </button>
@@ -273,6 +274,8 @@ const toggleSidebar = () => {
                     </div>
                 </div>
                 <!-- ./Product Card -->
+
+
             </main>
         </div>
         <!-- Footer -->
